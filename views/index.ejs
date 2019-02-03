@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Node Targil2</title>
+</head>
+<body>
+<br><br>
+<form method="post" action="/addmovie" id="addmovieform">
+<input type="text" name="movieName" required  placeholder="Movie Name"><br>
+<input type="text" name="movieGenre" required  placeholder="Movie Genre"><br>
+<input type="text" name="movieYear" required  placeholder="Year Released"><br>
+<input type="submit" value="Add Movie"><br><br>
+</form>
+<form action="/ratemovie" method="post">
+<input type="text" name="movieName" required  placeholder="Movie Name"><br>
+<input type="text" name="movieRating" required  placeholder="Rating"><br>
+<input type="submit" value="Rate Movie"><br><br>
+</form>
+<form action="/searchmovie" method="post">
+<input type="text" name="movieGenre" required placeholder="Genre to search"><br>
+<input type="text" name="startYear" required placeholder="First year to search"><br>
+<input type="text" name="endYear" required placeholder="Last year to search"><br>
+<input type="submit" value="Search Movie">
+</form>
+</body>
+</html>
